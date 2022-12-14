@@ -1,3 +1,6 @@
+volumes:
+  - name:  data
+    mount: /var/www/html
 envs:
   - MYSQL_PASSWORD: random_1
     type: password
