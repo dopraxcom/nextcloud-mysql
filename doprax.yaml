@@ -1,12 +1,13 @@
-volumes:
-  - name:  data
-    mount: /var/www/html
-envs:
-  - MYSQL_PASSWORD: random_1
-    type: password
-  - MYSQL_DATABASE: mydb
-  - MYSQL_USER: dbuser01
-  - MYSQL_HOST: mysql
+main:
+  volumes:
+    - name:  data
+      mount: /var/www/html
+  envs:
+    - MYSQL_PASSWORD: random_1
+      type: password
+    - MYSQL_DATABASE: mydb
+    - MYSQL_USER: dbuser01
+    - MYSQL_HOST: mysql
 
 services:
   - mysql:
